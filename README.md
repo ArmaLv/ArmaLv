@@ -3,7 +3,7 @@
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=armalv&label=Profile%20views&color=c22d7a&style=plastic" alt="armalv" /> </p>
 
----
+<--->
 
 - 🌱 I’m currently learning: **c#, game design**
 
@@ -19,5 +19,4 @@
 
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=armalv&show_icons=true&theme=highcontrast&title_color=db0b84&text_color=ab2e6c&hide_border=true&locale=en&layout=compact" alt="armalv" /></p>
 
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=armalv&show_icons=true&locale=en" alt="armalv" /></p>
-
+<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=armalv&show_icons=true&theme=highcontrast&title_color=e80279&text_color=b5268d&hide_border=true&locale=en" alt="armalv" /></p>
