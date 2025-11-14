@@ -16,7 +16,7 @@
 
 <h3 align="left">Support:</h3>
 <p align="center"><a href="https://ko-fi.com/ArmaLatv"> <img align="left" src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="50" width="210" alt="ArmaLatv" /></a></p><br><br>
-
+---
 <p align="center"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=armalv&show_icons=true&theme=highcontrast&title_color=db0b84&text_color=ab2e6c&hide_border=true&locale=en&layout=compact" alt="armalv" /></p>
 
 <p align="center">&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=armalv&show_icons=true&theme=highcontrast&title_color=e80279&text_color=b5268d&hide_border=true&locale=en" alt="armalv" /></p>
