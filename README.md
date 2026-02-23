@@ -1,8 +1,6 @@
 <h1 align="center">Hayo! I'm Arma</h1>
 <h3 align="center">Trying to cook and learn something</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=armalv&label=Profile%20views&color=c22d7a&style=plastic" alt="armalv" /> </p>
-
 ---
 
 - 🌱 I’m currently learning: **c#, game design**
