@@ -2,25 +2,30 @@
 
 <table width="100%">
 <tr>
-<td width="42%" align="center">
+<td width="40%" align="center">
 
-<img src="Assets/Jade.jpg" alt="Jade" width="320" />
+<img src="Assets/Jade.jpg" alt="Jade" width="300" />
 
 <sub>✦ <i>Jade — my light in the drift</i> ✦</sub>
 
 </td>
-<td width="58%" valign="middle">
+<td width="60%" valign="middle">
 
 # ✦ Hayo, I'm Arma
 
-> *"From on high, a little light — and something worth making."*
-
-<br/>
-
-🕯️ &nbsp;A quiet dev drifting between **code** and **art**
-🌱 &nbsp;Ascending through **C#** & **game design**
-🎨 &nbsp;Building small worlds, one verse at a time
-📫 &nbsp;How to reach me — **...you don't**
+```ansi
+[33mtenno@orbiter[0m:[36m~[0m$ [37mwhoami[0m
+[33m╭─────────────────────────────────────────╮[0m
+[33m│[0m  [37mArma[0m — a quiet dev in the drift        [33m│[0m
+[33m│[0m                                         [33m│[0m
+[33m│[0m  [36mrole[0m ....... code [90m×[0m art               [33m│[0m
+[33m│[0m  [36mlearning[0m ... [33mC#[0m [90m·[0m game design          [33m│[0m
+[33m│[0m  [36mbuilding[0m ... small worlds, one verse   [33m│[0m
+[33m│[0m               at a time                 [33m│[0m
+[33m│[0m  [36mreach me[0m ... [90m...you don't[0m 🕯️           [33m│[0m
+[33m╰─────────────────────────────────────────╯[0m
+[33mtenno@orbiter[0m:[36m~[0m$ [37m_[0m
+```
 
 </td>
 </tr>
@@ -28,12 +33,15 @@
 
 <!-- ✦ ─────────────────────  LIGHT VERDICT  ───────────────────── ✦ -->
 
+### ✦ Light Verdict — `~/arsenal`
+
+```ansi
+[33mtenno@orbiter[0m:[36m~/arsenal[0m$ [37mls -1[0m
+[37mblender[0m [90m/[0m [37mcsharp[0m [90m/[0m [37mcss3[0m [90m/[0m [37mhtml5[0m [90m/[0m [37mjavascript[0m
+[37mlinux[0m [90m/[0m [37mpython[0m [90m/[0m [37munity[0m [90m/[0m [37munreal[0m
+```
+
 <div align="center">
-
-### ✦ Light Verdict ✦
-<sub><i>the instruments I channel</i></sub>
-
-<br/>
 
 <a href="https://www.blender.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="blender" width="42" height="42"/></a>&nbsp;&nbsp;
 <a href="https://www.w3schools.com/cs/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="42" height="42"/></a>&nbsp;&nbsp;
@@ -49,14 +57,15 @@
 
 <!-- ✦ ─────────────────────  SYMPHONY OF MERCY  ───────────────────── ✦ -->
 
+### ✦ Symphony of Mercy — `sudo support`
+
+```ansi
+[33mtenno@orbiter[0m:[36m~[0m$ [37msudo support arma[0m
+[90m# a small mercy keeps the hymn going[0m
+[32m✓[0m if my work gives you a little light, buy me a coffee 🕯️
+```
+
 <div align="center">
-
-### ✦ Symphony of Mercy ✦
-<sub><i>a small mercy keeps the hymn going</i></sub>
-
-<br/>
-
-If my work gives you a little light, you can buy me a coffee 🕯️
 
 <a href="https://ko-fi.com/ArmaLatv" target="_blank"><img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="52" width="215" alt="Support Arma on Ko-fi" /></a>
 
