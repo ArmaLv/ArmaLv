@@ -1,4 +1,4 @@
-<!-- ✦ ────────────────────────────────────────────── ✦ -->
+<!-- ✦ ─────────────────────  GLORY ON HIGH  ───────────────────── ✦ -->
 
 <table width="100%">
 <tr>
@@ -6,29 +6,34 @@
 
 <img src="Assets/Jade.jpg" alt="Jade" width="320" />
 
+<sub>✦ <i>Jade — my light in the drift</i> ✦</sub>
+
 </td>
 <td width="58%" valign="middle">
 
 # ✦ Hayo, I'm Arma
 
-*Trying to cook and learn something.*
+> *"From on high, a little light — and something worth making."*
 
 <br/>
 
-🌱 &nbsp;Currently learning **C#** & **game design**
-🎨 &nbsp;Somewhere between code and art
-🕯️ &nbsp;Chasing a little bit of light in what I make
+🕯️ &nbsp;A quiet dev drifting between **code** and **art**
+🌱 &nbsp;Ascending through **C#** & **game design**
+🎨 &nbsp;Building small worlds, one verse at a time
 📫 &nbsp;How to reach me — **...you don't**
 
 </td>
 </tr>
 </table>
 
-<!-- ✦ ────────────────────────────────────────────── ✦ -->
+<!-- ✦ ─────────────────────  LIGHT VERDICT  ───────────────────── ✦ -->
 
 <div align="center">
 
-### ✦ Languages & Tools ✦
+### ✦ Light Verdict ✦
+<sub><i>the instruments I channel</i></sub>
+
+<br/>
 
 <a href="https://www.blender.org/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="blender" width="42" height="42"/></a>&nbsp;&nbsp;
 <a href="https://www.w3schools.com/cs/" target="_blank"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="42" height="42"/></a>&nbsp;&nbsp;
@@ -42,14 +47,21 @@
 
 </div>
 
-<!-- ✦ ────────────────────────────────────────────── ✦ -->
+<!-- ✦ ─────────────────────  SYMPHONY OF MERCY  ───────────────────── ✦ -->
 
 <div align="center">
 
-### ✦ Support ✦
+### ✦ Symphony of Mercy ✦
+<sub><i>a small mercy keeps the hymn going</i></sub>
+
+<br/>
 
 If my work gives you a little light, you can buy me a coffee 🕯️
 
 <a href="https://ko-fi.com/ArmaLatv" target="_blank"><img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" height="52" width="215" alt="Support Arma on Ko-fi" /></a>
+
+<br/><br/>
+
+<sub>✦ <i>thanks for drifting by</i> ✦</sub>
 
 </div>
