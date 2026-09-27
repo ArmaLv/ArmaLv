@@ -16,15 +16,15 @@ Anime fan, always building some small thing. ✨
 
 <div align="center">
 
-[![C#](https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg)](https://learn.microsoft.com/dotnet/csharp/)
-[![Unity](https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg)](https://unity.com/)
-[![Unreal](https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg)](https://unrealengine.com/)
-[![Blender](https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg)](https://www.blender.org/)
-[![Python](https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg)](https://www.python.org)
-[![JavaScript](https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![HTML5](https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg)](https://www.w3.org/html/)
-[![CSS3](https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg)](https://www.w3schools.com/css/)
-[![Linux](https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg)](https://www.linux.org/)
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" width="48" height="48" alt="C#" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" width="48" height="48" alt="Unity" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" width="48" height="48" alt="Unreal" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" width="48" height="48" alt="Blender" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="48" height="48" alt="Python" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="48" height="48" alt="HTML5" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="48" height="48" alt="CSS3" />&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="48" height="48" alt="Linux" />
 
 </div>
 
@@ -41,8 +41,18 @@ Anime fan, always building some small thing. ✨
 
 <div align="center">
 
-<!-- Cards flake out on the shared instance — swap in your own Vercel URL once you have it -->
-![Arma's GitHub stats](https://github-readme-stats.vercel.app/api?username=ArmaLv&show_icons=true&count_private=true&hide_border=true&title_color=F48FB1&icon_color=F48FB1&text_color=C9C9C9&bg_color=0D1117)
+![Followers](https://img.shields.io/github/followers/ArmaLv?style=for-the-badge&logo=github&color=F48FB1&labelColor=0D1117)
+![Profile views](https://komarev.com/ghpvc/?username=ArmaLv&style=for-the-badge&color=F48FB1&label=Views)
+
+<!--
+The full stats/graph card is disabled because the shared instance
+(github-readme-stats.vercel.app) gets rate-limited by GitHub and shows
+"Maximum retries exceeded". Deploy your own free Vercel instance, then
+put your URL below and uncomment it:
+
+![Arma's GitHub stats](https://YOUR-INSTANCE.vercel.app/api?username=ArmaLv&show_icons=true&hide_border=true&title_color=F48FB1&icon_color=F48FB1&text_color=C9C9C9&bg_color=0D1117)
+-->
+
 
 </div>
 
