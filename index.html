@@ -229,10 +229,6 @@
     .portrait img { max-width: 70vw; }
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .petal { display: none; }
-    html { scroll-behavior: auto; }
-  }
 
   /* custom cursor (enabled via JS on fine-pointer devices) */
   body.cursor-on, body.cursor-on * { cursor: none; }
@@ -272,9 +268,6 @@
                         transform 0.85s cubic-bezier(0.2, 0.7, 0.2, 1); }
   .js .reveal { opacity: 0; transform: translateY(28px); will-change: opacity, transform; }
   .js .reveal.in { opacity: 1; transform: none; }
-  @media (prefers-reduced-motion: reduce) {
-    .js .reveal { opacity: 1; transform: none; transition: none; }
-  }
 
   /* portrait tilt gets a smooth settle */
   .portrait img { transition: transform 0.25s ease, box-shadow 0.25s ease; transform-origin: center; }
@@ -379,11 +372,10 @@
     }
   })();
 
-  // custom cursor — gold dot + trailing ring (fine pointers, motion allowed)
+  // custom cursor — gold dot + trailing ring (fine pointers only)
   (function () {
     const fine = window.matchMedia('(pointer: fine)').matches;
-    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!fine || calm) return;
+    if (!fine) return;
 
     const dot = document.createElement('div');
     const ring = document.createElement('div');
@@ -422,11 +414,10 @@
     addEventListener('mouseenter', () => document.body.classList.add('cursor-ready'));
   })();
 
-  // inertial smooth scroll — eased wheel gliding (fine pointers, motion allowed)
+  // inertial smooth scroll — eased wheel gliding (fine pointers only)
   (function () {
     const fine = window.matchMedia('(pointer: fine)').matches;
-    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!fine || calm) return;
+    if (!fine) return;
 
     // we animate scrollTo ourselves, so disable the browser's own smoothing to avoid double-easing
     document.documentElement.style.scrollBehavior = 'auto';
@@ -469,8 +460,7 @@
   // scroll-reveal — fade + rise as sections enter view
   (function () {
     const items = document.querySelectorAll('.reveal');
-    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (calm || !('IntersectionObserver' in window)) {
+    if (!('IntersectionObserver' in window)) {
       items.forEach((el) => el.classList.add('in'));
       return;
     }
@@ -485,8 +475,7 @@
   // portrait parallax — Jade tilts toward the cursor
   (function () {
     const fine = window.matchMedia('(pointer: fine)').matches;
-    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!fine || calm) return;
+    if (!fine) return;
     const fig = document.querySelector('.portrait');
     const img = fig && fig.querySelector('img');
     if (!img) return;
@@ -504,8 +493,7 @@
   // click ripple — gold shimmer at the pointer
   (function () {
     const fine = window.matchMedia('(pointer: fine)').matches;
-    const calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!fine || calm) return;
+    if (!fine) return;
     addEventListener('pointerdown', (e) => {
       if (e.pointerType && e.pointerType !== 'mouse') return;
       const r = document.createElement('span');
