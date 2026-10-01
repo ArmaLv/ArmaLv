@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arma — In the Drift</title>
+<meta name="description" content="Arma — a quiet dev drifting between code and art. Learning C# & game design." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #130f0a;
+    --bg-2: #1b1610;
+    --panel: rgba(42, 34, 24, 0.45);
+    --border: rgba(212, 160, 74, 0.22);
+    --gold: #e0ad5a;
+    --gold-bright: #f4cf8a;
+    --gold-soft: #c9a86a;
+    --text: #ece5d6;
+    --muted: #a39883;
+    --halo: rgba(224, 173, 90, 0.35);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background:
+      radial-gradient(1200px 700px at 72% -10%, rgba(224, 173, 90, 0.14), transparent 60%),
+      radial-gradient(900px 600px at 10% 110%, rgba(224, 173, 90, 0.06), transparent 55%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+    background-attachment: fixed;
+    color: var(--text);
+    line-height: 1.65;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  /* drifting petals */
+  .petals { position: fixed; inset: 0; pointer-events: none; z-index: 0; overflow: hidden; }
+  .petal {
+    position: absolute;
+    top: -6vh;
+    width: 10px; height: 10px;
+    background: linear-gradient(135deg, var(--gold-bright), var(--gold-soft));
+    border-radius: 60% 10% 60% 10%;
+    opacity: 0;
+    filter: drop-shadow(0 0 4px var(--halo));
+    animation: fall linear infinite;
+  }
+  @keyframes fall {
+    0%   { transform: translateY(-10vh) rotate(0deg);   opacity: 0; }
+    10%  { opacity: 0.9; }
+    90%  { opacity: 0.7; }
+    100% { transform: translateY(112vh) rotate(420deg); opacity: 0; }
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 1;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  /* hero */
+  .hero {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    min-height: 92vh;
+    padding: 80px 0 40px;
+  }
+  .portrait {
+    position: relative;
+    flex: 0 0 auto;
+  }
+  .portrait::before {
+    content: "";
+    position: absolute;
+    inset: -22px;
+    background: radial-gradient(circle at 50% 42%, var(--halo), transparent 68%);
+    filter: blur(6px);
+    z-index: -1;
+  }
+  .portrait img {
+    width: 280px;
+    max-width: 38vw;
+    min-width: 180px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.55), 0 0 40px rgba(224,173,90,0.12);
+    display: block;
+  }
+  .portrait figcaption {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 0.82rem;
+    color: var(--gold-soft);
+    font-style: italic;
+    letter-spacing: 0.02em;
+  }
+
+  .intro { flex: 1 1 auto; }
+  .eyebrow {
+    letter-spacing: 0.42em;
+    text-transform: uppercase;
+    font-size: 0.72rem;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .intro h1 {
+    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-weight: 600;
+    line-height: 1.02;
+    letter-spacing: 0.01em;
+  }
+  .intro h1 .name {
+    color: var(--gold-bright);
+    text-shadow: 0 0 28px rgba(224,173,90,0.35);
+  }
+  .quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+    color: var(--muted);
+    margin: 20px 0 28px;
+    padding-left: 18px;
+    border-left: 2px solid var(--border);
+  }
+  .facts { list-style: none; display: grid; gap: 10px; }
+  .facts li { display: flex; gap: 12px; align-items: baseline; font-weight: 300; }
+  .facts .ic { font-style: normal; }
+  .facts b { color: var(--text); font-weight: 500; }
+  .facts .dim { color: var(--muted); }
+
+  /* sections */
+  section { padding: 70px 0; }
+  .sec-head { text-align: center; margin-bottom: 40px; }
+  .sec-head h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+    font-weight: 600;
+    color: var(--gold-bright);
+    letter-spacing: 0.02em;
+  }
+  .sec-head .sub {
+    color: var(--muted);
+    font-style: italic;
+    font-size: 0.95rem;
+    margin-top: 4px;
+  }
+  .divider {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    position: relative;
+  }
+  .divider::after {
+    content: "✦";
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-2);
+    color: var(--gold);
+    padding: 0 12px;
+    font-size: 0.8rem;
+  }
+
+  /* tools grid */
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+    gap: 16px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 10px;
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--muted);
+    font-size: 0.78rem;
+    letter-spacing: 0.03em;
+    transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .tool img { width: 40px; height: 40px; }
+  .tool:hover {
+    transform: translateY(-4px);
+    border-color: var(--gold);
+    color: var(--gold-bright);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 22px rgba(224,173,90,0.14);
+  }
+
+  /* support */
+  .support { text-align: center; }
+  .support p { color: var(--muted); margin-bottom: 24px; max-width: 460px; margin-inline: auto; }
+  .kofi { display: inline-block; transition: transform 0.2s ease, filter 0.2s ease; }
+  .kofi:hover { transform: translateY(-3px); filter: drop-shadow(0 8px 20px rgba(224,173,90,0.3)); }
+  .kofi img { height: 54px; display: block; }
+
+  footer {
+    text-align: center;
+    padding: 50px 0 60px;
+    color: var(--gold-soft);
+    font-style: italic;
+    font-size: 0.85rem;
+  }
+  footer .mark { letter-spacing: 0.3em; }
+
+  @media (max-width: 680px) {
+    .hero { flex-direction: column; text-align: center; gap: 28px; padding-top: 60px; min-height: auto; }
+    .quote { border-left: none; padding-left: 0; }
+    .facts li { justify-content: center; }
+    .portrait img { max-width: 70vw; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .petal { display: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<div class="petals" aria-hidden="true" id="petals"></div>
+
+<div class="wrap">
+
+  <!-- ✦ GLORY ON HIGH — hero -->
+  <header class="hero">
+    <figure class="portrait">
+      <img src="Assets/Jade.jpg" alt="Jade, Warframe" />
+      <figcaption>✦ Jade — my light in the drift ✦</figcaption>
+    </figure>
+    <div class="intro">
+      <div class="eyebrow">Glory on High</div>
+      <h1>Hayo, I'm <span class="name">Arma</span></h1>
+      <p class="quote">"From on high, a little light — and something worth making."</p>
+      <ul class="facts">
+        <li><i class="ic">🕯️</i><span>A quiet dev drifting between <b>code</b> and <b>art</b></span></li>
+        <li><i class="ic">🌱</i><span>Ascending through <b>C#</b> &amp; <b>game design</b></span></li>
+        <li><i class="ic">🎨</i><span>Building small worlds, one verse at a time</span></li>
+        <li><i class="ic">📫</i><span>How to reach me — <span class="dim">...you don't</span></span></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ✦ LIGHT VERDICT — tools -->
+  <section id="arsenal">
+    <div class="sec-head">
+      <h2>✦ Light Verdict ✦</h2>
+      <div class="sub">the instruments I channel</div>
+    </div>
+    <div class="tools">
+      <a class="tool" href="https://www.blender.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/blender/blender-original.svg" alt="" /><span>Blender</span></a>
+      <a class="tool" href="https://learn.microsoft.com/dotnet/csharp/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="" /><span>C#</span></a>
+      <a class="tool" href="https://developer.mozilla.org/docs/Web/CSS" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="" /><span>CSS3</span></a>
+      <a class="tool" href="https://developer.mozilla.org/docs/Web/HTML" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="" /><span>HTML5</span></a>
+      <a class="tool" href="https://developer.mozilla.org/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="" /><span>JavaScript</span></a>
+      <a class="tool" href="https://www.linux.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="" /><span>Linux</span></a>
+      <a class="tool" href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="" /><span>Python</span></a>
+      <a class="tool" href="https://unity.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/unity/unity-original.svg" alt="" /><span>Unity</span></a>
+      <a class="tool" href="https://www.unrealengine.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/kenangundogan/fontisto/036b7eca71aab1bef8e6a0518f7329f13ed62f6b/icons/svg/brand/unreal-engine.svg" alt="" /><span>Unreal</span></a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ✦ SYMPHONY OF MERCY — support -->
+  <section class="support" id="support">
+    <div class="sec-head">
+      <h2>✦ Symphony of Mercy ✦</h2>
+      <div class="sub">a small mercy keeps the hymn going</div>
+    </div>
+    <p>If my work gives you a little light, you can buy me a coffee 🕯️</p>
+    <a class="kofi" href="https://ko-fi.com/ArmaLatv" target="_blank" rel="noreferrer">
+      <img src="https://cdn.ko-fi.com/cdn/kofi3.png?v=3" alt="Support Arma on Ko-fi" />
+    </a>
+  </section>
+
+  <footer>
+    <span class="mark">✦ thanks for drifting by ✦</span>
+  </footer>
+
+</div>
+
+<script>
+  // scatter drifting petals
+  (function () {
+    const layer = document.getElementById('petals');
+    const N = 14;
+    for (let i = 0; i < N; i++) {
+      const p = document.createElement('span');
+      p.className = 'petal';
+      const size = 6 + Math.random() * 9;
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.width = size + 'px';
+      p.style.height = size + 'px';
+      p.style.animationDuration = (9 + Math.random() * 11) + 's';
+      p.style.animationDelay = (-Math.random() * 16) + 's';
+      p.style.opacity = 0.5 + Math.random() * 0.4;
+      layer.appendChild(p);
+    }
+  })();
+</script>
+
+</body>
+</html>
