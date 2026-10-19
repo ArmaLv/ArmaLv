@@ -10,7 +10,7 @@ Anime fan, always building some small thing. ✨
 </div>
 <div align="center">
   
-[More About Me](https://armalv.github.io/ArmaLv/)
+[More About Me]([https://armalv.github.io/ArmaLv/](https://armalv.github.io/))
 </div>
 
 ---
