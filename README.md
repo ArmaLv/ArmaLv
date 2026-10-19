@@ -7,9 +7,10 @@
 
 **Game developer & hobbyist** — mostly C# and Unity, with a bit of art on the side.
 Anime fan, always building some small thing. ✨
-
-[![Website](https://img.shields.io/badge/My_Site-armalv.github.io-F48FB1?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=0D1117)](https://armalv.github.io/)
-
+</div>
+<div align="center">
+  
+[More About Me](https://armalv.github.io/ArmaLv/)
 </div>
 
 ---
