@@ -46,11 +46,7 @@ I build gameplay systems and small, focused tools — mostly in Unity with C#, w
 <div align="center">
 
 [![FlexibleGridLayout](https://github-readme-stats.vercel.app/api/pin/?username=ArmaLv&repo=FlexibleGridLayout&title_color=E4BA5E&icon_color=E4BA5E&text_color=c9d1d9&bg_color=0D1117&border_color=E4BA5E)](https://github.com/ArmaLv/FlexibleGridLayout)
-[![DialogueSystem](https://github-readme-stats.vercel.app/api/pin/?username=ArmaLv&repo=DialogueSystem&title_color=E4BA5E&icon_color=E4BA5E&text_color=c9d1d9&bg_color=0D1117&border_color=E4BA5E)](https://github.com/ArmaLv/DialogueSystem)
-
-[![Colors](https://github-readme-stats.vercel.app/api/pin/?username=ArmaLv&repo=Colors&title_color=E4BA5E&icon_color=E4BA5E&text_color=c9d1d9&bg_color=0D1117&border_color=E4BA5E)](https://github.com/ArmaLv/Colors)
-[![SyncYomi-LibraryView](https://github-readme-stats.vercel.app/api/pin/?username=ArmaLv&repo=SyncYomi-LibraryView&title_color=E4BA5E&icon_color=E4BA5E&text_color=c9d1d9&bg_color=0D1117&border_color=E4BA5E)](https://github.com/ArmaLv/SyncYomi-LibraryView)
-
+[![DialogueSystem](https://github-readme-stats.vercel.app/api/pin/?username=ArmaLv&repo=DialogueSystem&title_color=E4BA5E&icon_color=E4BA5E&text_color=c9d1d9&bg_color=0D1117&border_color=E4BA5E)](https://github.com/ArmaLv/DialogueSystem)s
 </div>
 
 **Highlights**
